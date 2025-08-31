@@ -57,27 +57,34 @@ export function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-1">
           {navigation.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className={`relative px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                activeSection === item.href.slice(1)
-                  ? "text-[var(--cc-black-700)]"
-                  : "text-[var(--cc-slate-600)] hover:text-[var(--cc-black-700)]"
-              }`}
-            >
-              {item.label}
-              {activeSection === item.href.slice(1) && (
-                <span
-                  className="pointer-events-none absolute -bottom-1 h-0.5 rounded-full bg-[var(--cc-black-700)] transition-[left,width] duration-300 ease-[cubic-bezier(.2,1.4,.2,1)]"
-                  style={{ left: "50%", width: "0%" }}
-                />
-              )}
-            </a>
+            item.href === "#contact" ? (
+              <Button
+                key={item.href}
+                asChild
+                className="h-9 px-4 bg-[var(--cc-yellow-500)] text-[var(--cc-black-900)] hover:bg-[color:var(--cc-yellow-500)/90] font-semibold shadow"
+              >
+                <a href={item.href}>{item.label}</a>
+              </Button>
+            ) : (
+              <a
+                key={item.href}
+                href={item.href}
+                className={`relative px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                  activeSection === item.href.slice(1)
+                    ? "text-[var(--cc-black-700)]"
+                    : "text-[var(--cc-slate-600)] hover:text-[var(--cc-black-700)]"
+                }`}
+              >
+                {item.label}
+                {activeSection === item.href.slice(1) && (
+                  <span
+                    className="pointer-events-none absolute -bottom-1 h-0.5 rounded-full bg-[var(--cc-black-700)] transition-[left,width] duration-300 ease-[cubic-bezier(.2,1.4,.2,1)]"
+                    style={{ left: "50%", width: "0%" }}
+                  />
+                )}
+              </a>
+            )
           ))}
-          <Button asChild className="h-9 px-4 bg-[var(--cc-yellow-500)] text-[var(--cc-black-900)] hover:bg-[color:var(--cc-yellow-500)/90] font-semibold shadow">
-            <a href="#contact">Get Started</a>
-          </Button>
         </div>
 
         {/* Mobile Navigation */}
@@ -99,18 +106,25 @@ export function Navbar() {
           <div className="container mx-auto px-4 py-4">
             <div className="flex flex-col gap-2 pt-3">
               {navigation.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="px-3 py-2 text-base font-medium rounded-md hover:bg-[var(--cc-slate-100)] transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </a>
+                item.href === "#contact" ? (
+                  <Button
+                    key={item.href}
+                    asChild
+                    className="bg-[var(--cc-yellow-500)] text-[var(--cc-black-900)] hover:bg-[color:var(--cc-yellow-500)/90] font-semibold shadow"
+                  >
+                    <a href={item.href} onClick={() => setIsOpen(false)}>{item.label}</a>
+                  </Button>
+                ) : (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className="px-3 py-2 text-base font-medium rounded-md hover:bg-[var(--cc-slate-100)] transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
-              <Button asChild className="mt-2 bg-[var(--cc-yellow-500)] text-[var(--cc-black-900)] hover:bg-[color:var(--cc-yellow-500)/90] font-semibold shadow">
-                <a href="#contact" onClick={() => setIsOpen(false)}>Get Started</a>
-              </Button>
             </div>
           </div>
         </div>

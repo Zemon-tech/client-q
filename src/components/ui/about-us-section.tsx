@@ -227,20 +227,6 @@ export default function AboutUsSection() {
                   alt="Modern House"
                   className="w-full h-full object-cover"
                 />
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-t from-[color:var(--cc-blue-900)/60] to-transparent flex items-end justify-center p-4"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.8, delay: 0.9 }}
-                >
-                  <motion.button
-                    className="bg-white text-[var(--cc-blue-900)] px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    Our Portfolio <ArrowRight className="w-4 h-4" />
-                  </motion.button>
-                </motion.div>
               </motion.div>
               <motion.div
                 className="absolute inset-0 border-4 border-[var(--cc-slate-300)] rounded-md -m-3 z-[-1]"

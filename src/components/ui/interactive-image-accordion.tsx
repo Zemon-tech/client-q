@@ -113,7 +113,7 @@ export function LandingAccordionItem() {
             <div className="mt-6">
               <a
                 href="#contact"
-                className="inline-block bg-[var(--cc-blue-700)] text-white font-medium px-6 py-2.5 rounded-md shadow-xs hover:bg-[color:var(--cc-blue-700)/90] transition-colors"
+                className="inline-block bg-[var(--cc-blue-700)] text-white font-medium px-6 py-2.5 rounded-md shadow-xs hover:bg-[#1a3a9a] transition-colors duration-200"
               >
                 Start your session
               </a>
