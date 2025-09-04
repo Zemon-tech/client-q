@@ -24,7 +24,7 @@ export function CTASection({ title, action, className }: CTAProps) {
         <Button 
           variant={action.variant || "default"} 
           size="lg" 
-          className="bg-[var(--cc-blue-700)] hover:bg-[#1a3a9a] transition-colors duration-200"
+          className="bg-[var(--cc-yellow-500)] hover:bg-[var(--cc-yellow-600)] text-black transition-colors duration-200"
           asChild
         >
           <a href={action.href}>{action.text}</a>

@@ -30,7 +30,7 @@ export function Hero() {
             <li>Public speaking, communication, leadership</li>
           </ul>
           <div className="mt-8 flex items-center gap-3">
-            <Button asChild className="h-11 px-6 bg-[var(--cc-blue-700)] hover:bg-[#1a3a9a] transition-colors duration-200">
+            <Button asChild className="h-11 px-6 bg-[var(--cc-yellow-500)] hover:bg-[var(--cc-yellow-600)] text-black transition-colors duration-200">
               <a href={formUrl} target="_blank" rel="noreferrer noopener" aria-label="Start your session">
                 Start your session
               </a>

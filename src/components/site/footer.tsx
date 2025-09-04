@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="border-t border-[var(--cc-slate-300)] bg-[var(--cc-blue-700)] text-white">
+    <footer className="border-t border-[var(--cc-slate-300)] bg-black bg-gradient-to-t from-yellow-450/10 text-white">
       <div className="mx-auto max-w-6xl px-4 py-10">
         <h2 className="sr-only">Footer</h2>
         <div className="text-center mb-6">
@@ -48,10 +48,9 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-[color:var(--cc-black-900)/10]">
+      <div className="bg-black/80">
         <div className="mx-auto max-w-6xl px-4 py-6 flex flex-col items-center gap-4 text-center">
-          <div className="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between w-full">
-            <p className="text-white/90 text-sm">© 2025 Confidence Collection. All rights reserved.</p>
+          <div className="flex flex-col items-center sm:flex-row gap-3 sm:items-center sm:justify-between w-full">
             <Link
               href="https://www.linkedin.com/in/sakshi-sunil-b35063205/"
               className="inline-flex items-center gap-2 text-white text-sm font-semibold"
@@ -67,6 +66,7 @@ export function Footer() {
               </svg>
               LinkedIn
             </Link>
+            <p className="text-white/90 text-sm">© 2025 Confidence Collection. All rights reserved.</p>
           </div>
         </div>
       </div>

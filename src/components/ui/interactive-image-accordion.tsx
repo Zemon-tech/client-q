@@ -115,7 +115,7 @@ export function LandingAccordionItem() {
                 href={process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || "#"}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-block bg-[var(--cc-blue-700)] text-white font-medium px-6 py-2.5 rounded-md shadow-xs hover:bg-[#1a3a9a] transition-colors duration-200"
+                className="inline-block bg-[var(--cc-yellow-500)] text-black font-medium px-6 py-2.5 rounded-md shadow-xs hover:bg-[var(--cc-yellow-600)] transition-colors duration-200"
               >
                 Start your session
               </a>
