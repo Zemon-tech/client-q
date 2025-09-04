@@ -14,7 +14,8 @@ const inter = Inter({
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
   subsets: ["latin"],
-  weight: ["700", "800"],
+  // Include light to extra-bold to match headings that use font-light/medium/bold
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 

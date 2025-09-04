@@ -8,25 +8,25 @@ const accordionItems = [
     id: 1,
     title: 'Students & Youth — Confidence, Personality, Time, Stress & Teamwork, Campus GD/Presentation, Internship interview primers',
     shortTitle: 'Students',
-    imageUrl: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1974&auto=format&fit=crop',
+    imageUrl: '/students.jpg',
   },
   {
     id: 2,
     title: 'Job Seekers — Interview Prep, Resume, LinkedIn, Narrative, Job strategy, Recruiter screen confidence',
     shortTitle: 'Job Seekers',
-    imageUrl: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1974&auto=format&fit=crop',
+    imageUrl: '/job.jpg',
   },
   {
     id: 3,
     title: 'Professionals & Managers — Communication & Presentation, Executive Presence, Manager feedback, 1:1 Coaching, Leader time management',
     shortTitle: 'Pro Managers',
-    imageUrl: 'https://images.unsplash.com/photo-1552664730-7bfa290a1cf5?q=80&w=1974&auto=format&fit=crop',
+    imageUrl: '/managers.jpg',
   },
   {
     id: 4,
     title: 'Teams & Corporates — Corporate Training: Comm/Presentation, Teamwork & Stress, Feedback clinics, GD/Presentation workshops',
     shortTitle: 'Teams Corp',
-    imageUrl: 'https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=1974&auto=format&fit=crop',
+    imageUrl: '/team.jpg',
   },
 ];
 
@@ -112,7 +112,9 @@ export function LandingAccordionItem() {
             </p>
             <div className="mt-6">
               <a
-                href="#contact"
+                href={process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || "#"}
+                target="_blank"
+                rel="noreferrer noopener"
                 className="inline-block bg-[var(--cc-blue-700)] text-white font-medium px-6 py-2.5 rounded-md shadow-xs hover:bg-[#1a3a9a] transition-colors duration-200"
               >
                 Start your session

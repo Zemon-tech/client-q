@@ -178,7 +178,7 @@ export default function AboutUsSection() {
             <Zap className="w-4 h-4" />
             DISCOVER OUR STORY
           </motion.span>
-          <h2 className="text-4xl md:text-5xl font-light mb-4 text-center">About Confidence Collection</h2>
+          <h2 className="font-heading text-4xl md:text-5xl font-light mb-4 text-center">About Confidence Collection</h2>
           <motion.div
             className="w-24 h-1 bg-[var(--cc-yellow-500)]"
             initial={{ width: 0 }}
@@ -354,7 +354,7 @@ function ServiceItem({ icon, secondaryIcon, title, description, variants, delay,
           {icon}
           {secondaryIcon}
         </motion.div>
-        <h3 className="text-xl font-medium text-[var(--cc-blue-900)] group-hover:text-[var(--cc-yellow-500)] transition-colors duration-300">
+        <h3 className="font-heading text-xl font-medium text-[var(--cc-blue-900)] group-hover:text-[var(--cc-yellow-500)] transition-colors duration-300">
           {title}
         </h3>
       </motion.div>

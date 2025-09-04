@@ -12,7 +12,7 @@ export function Features() {
                                 <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
                                     <Briefcase className="m-auto size-6 text-[var(--cc-blue-700)]" strokeWidth={1} />
                                 </div>
-                                <h2 className="mt-6 text-center text-3xl font-semibold">Corporate Training & 1:1 Coaching</h2>
+                                <h2 className="font-heading mt-6 text-center text-3xl font-semibold">Corporate Training & 1:1 Coaching</h2>
                                 <ul className="mt-3 list-disc text-left text-sm text-foreground/90 space-y-1 pl-6">
                                     <li>Feedback with managers</li>
                                     <li>Team workshops</li>
@@ -26,7 +26,7 @@ export function Features() {
                                     <IdCard className="m-auto size-10 text-[var(--cc-blue-700)]" strokeWidth={1} />
                                 </div>
                                 <div className="relative z-10 mt-6 space-y-2 text-center">
-                                    <h2 className="text-lg font-medium transition">Personal Branding & Visibility</h2>
+                                    <h2 className="font-heading text-lg font-medium transition">Personal Branding & Visibility</h2>
                                     <ul className="mt-2 list-disc text-left text-sm text-foreground/90 space-y-1 pl-6">
                                         <li>Resume review</li>
                                         <li>LinkedIn review</li>
@@ -77,7 +77,7 @@ export function Features() {
                                     </svg>
                                 </div>
                                 <div className="relative z-10 mt-14 space-y-2 text-center">
-                                    <h2 className="text-lg font-medium transition">Interview Preparation</h2>
+                                    <h2 className="font-heading text-lg font-medium transition">Interview Preparation</h2>
                                     <ul className="mt-2 list-disc text-left text-sm text-foreground/90 space-y-1 pl-6">
                                         <li>Mock interviews</li>
                                         <li>Feedback loops</li>
@@ -93,7 +93,7 @@ export function Features() {
                                         <Presentation className="m-auto size-6 text-[var(--cc-blue-700)]" strokeWidth={1} />
                                     </div>
                                     <div className="space-y-2">
-                                        <h2 className="group-hover:text-secondary-950 text-lg font-medium text-zinc-800 transition dark:text-white">Communication & Presentation</h2>
+                                        <h2 className="font-heading group-hover:text-secondary-950 text-lg font-medium text-zinc-800 transition dark:text-white">Communication & Presentation</h2>
                                         <p className="text-foreground">Interpersonal frameworks, group discussion drills, and executive presence for clear, confident delivery.</p>
                                     </div>
                                 </div>
@@ -133,7 +133,7 @@ export function Features() {
                                         <GraduationCap className="m-auto size-6 text-[var(--cc-blue-700)]" strokeWidth={1} />
                                     </div>
                                     <div className="space-y-2">
-                                        <h2 className="text-lg font-medium transition">Student & Youth Programs</h2>
+                                        <h2 className="font-heading text-lg font-medium transition">Student & Youth Programs</h2>
                                         <p className="text-foreground">Confidence, personality development, teamwork, stress and time management for campus and early‑career success.</p>
                                     </div>
                                 </div>
