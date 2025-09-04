@@ -116,10 +116,10 @@ export default function AboutUsSection() {
   ]
 
   const stats = [
-    { icon: <Award />, value: 500, label: "Sessions Delivered", suffix: "+" },
-    { icon: <Users />, value: 1200, label: "Individuals Coached", suffix: "+" },
+    { icon: <Award />, value: 50, label: "Sessions Delivered", suffix: "+" },
+    { icon: <Users />, value: 200, label: "Individuals Coached", suffix: "+" },
     { icon: <Calendar />, value: 5, label: "Years Experience", suffix: "+" },
-    { icon: <TrendingUp />, value: 98, label: "Satisfaction Rate", suffix: "%" },
+    { icon: <TrendingUp />, value: 99, label: "Satisfaction Rate", suffix: "%" },
   ]
 
   return (
@@ -163,7 +163,7 @@ export default function AboutUsSection() {
       />
 
       <motion.div
-        className="container mx-auto max-w-6xl relative z-10"
+        className="container mx-auto max-w-6xl px-4 md:px-6 lg:px-8 relative z-10"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}

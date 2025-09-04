@@ -11,43 +11,43 @@ const testimonials = [
     tempId: 0,
     testimonial: "Incredibly insightful session! The profile analysis was fantastic and gave me key pointers. Already looking forward to future sessions!",
     by: "Abhijai Srivastava ",
-    imgSrc: "https://i.pravatar.cc/150?img=1"
+    imgSrc: "https://avatar.iran.liara.run/public/boy"
   },
   {
     tempId: 1,
     testimonial: "Incredibly helpful! Now I know how to build my LinkedIn, Internshala, and Naukri profiles effectively, plus valuable CV insights for recruiters.",
     by: "Shilpi rai",
-    imgSrc: "https://i.pravatar.cc/150?img=2"
+    imgSrc: "https://avatar.iran.liara.run/public/girl"
   },
   {
     tempId: 2,
     testimonial: "Valuable session! Learned powerful self-confidence techniques. Can't wait for the next session.",
     by: "Satakshi kewlani",
-    imgSrc: "https://i.pravatar.cc/150?img=3"
+    imgSrc: "https://avatar.iran.liara.run/public/girl"
   },
   {
     tempId: 3,
     testimonial: "Super helpful! Learned to create a single-page resume, write meaningful summaries, and optimize my LinkedIn profile. Thank you!",
     by: "Yash Panchal ",
-    imgSrc: "https://i.pravatar.cc/150?img=4"
+    imgSrc: "https://avatar.iran.liara.run/public/boy"
   },
   {
     tempId: 4,
     testimonial: "Amazing experience! Got valuable insights on CV, LinkedIn, and interviews. Really appreciate going beyond scheduled time.",
     by: "Shubham Sardhalia ",
-    imgSrc: "https://i.pravatar.cc/150?img=5"
+    imgSrc: "https://avatar.iran.liara.run/public/boy"
   },
   {
     tempId: 5,
     testimonial: "Wonderful and amazing! She helped me gain confidence and direction. Always responsive and thorough. Exceptional work and very positive person.",
     by: "",
-    imgSrc: "https://i.pravatar.cc/150?img=5"
+    imgSrc: "https://avatar.iran.liara.run/public/boy"
   },
   {
     tempId: 6,
     testimonial: "Sakshi's HR work has positively impacted me. She's a thoughtful leader who genuinely cares. Her expertise and decency make her exceptional.",
     by: "",
-    imgSrc: "https://i.pravatar.cc/150?img=6"
+    imgSrc: "https://avatar.iran.liara.run/public/boy"
   }
 ];
 
