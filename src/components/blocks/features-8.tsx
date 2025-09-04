@@ -19,10 +19,10 @@ export function Features() {
                                 <div className="relative z-10 mt-6 space-y-2 text-center">
                                     <h2 className="font-heading text-lg font-medium transition">Corporate Training & 1:1 Coaching</h2>
                                     <ul className="mt-2 list-disc text-left text-sm text-foreground/90 space-y-1 pl-6">
-                                        <li>Feedback with managers</li>
-                                        <li>Team workshops</li>
-                                        <li>Time management sprints</li>
-                                    </ul>
+                                    <li>Feedback with managers</li>
+                                    <li>Team workshops</li>
+                                    <li>Time management sprints</li>
+                                </ul>
                                 </div>
                             </CardContent>
                         </Card>
