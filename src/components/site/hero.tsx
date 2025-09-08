@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { ChevronDown, PlayCircle } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export function Hero() {
   const formUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || "#";

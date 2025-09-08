@@ -21,9 +21,9 @@ import {
   TrendingUp,
 } from "lucide-react"
 import { motion, useScroll, useTransform, useInView, useSpring, type Variants } from "framer-motion"
+import Image from "next/image"
 
 export default function AboutUsSection() {
-  const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLDivElement>(null)
   const statsRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(sectionRef, { once: false, amount: 0.1 })
@@ -39,10 +39,6 @@ export default function AboutUsSection() {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, 50])
   const rotate1 = useTransform(scrollYProgress, [0, 1], [0, 20])
   const rotate2 = useTransform(scrollYProgress, [0, 1], [0, -20])
-
-  useEffect(() => {
-    setIsVisible(true)
-  }, [])
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -222,9 +218,11 @@ export default function AboutUsSection() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
               >
-                <img
+                <Image
                   src="/generated-image.png"
                   alt="Modern House"
+                  width={400}
+                  height={300}
                   className="w-full h-full object-cover"
                 />
               </motion.div>

@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card'
-import { Briefcase, IdCard, Presentation, GraduationCap } from 'lucide-react'
+import { Presentation, GraduationCap } from 'lucide-react'
+import Image from 'next/image'
 
 export function Features() {
     return (
@@ -10,9 +11,11 @@ export function Features() {
                         <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
                             <CardContent className="pt-6">
                                 <div className="pt-2 lg:px-6">
-                                    <img
+                                    <Image
                                         src="/corporate-train.png"
                                         alt="Corporate Training"
+                                        width={300}
+                                        height={200}
                                         className="w-full"
                                     />
                                 </div>
@@ -29,9 +32,11 @@ export function Features() {
                         <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
                             <CardContent className="pt-6">
                                 <div className="pt-2 lg:px-6">
-                                    <img
+                                    <Image
                                         src="/personal-brand.png"
                                         alt="Personal Branding"
+                                        width={300}
+                                        height={200}
                                         className="w-full"
                                     />
                                 </div>
@@ -48,9 +53,11 @@ export function Features() {
                         <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
                             <CardContent className="pt-6">
                                 <div className="pt-6 lg:px-6">
-                                    <img
+                                    <Image
                                         src="/interview-prepration.png"
                                         alt="Interview Preparation"
+                                        width={300}
+                                        height={200}
                                         className="w-full"
                                     />
                                 </div>
@@ -81,9 +88,11 @@ export function Features() {
                                         <span className="block size-2 rounded-full border dark:border-white/10 dark:bg-white/10"></span>
                                         <span className="block size-2 rounded-full border dark:border-white/10 dark:bg-white/10"></span>
                                     </div>
-                                    <img
+                                    <Image
                                         src="/communications-presentations.png"
                                         alt="Communication & Presentation"
+                                        width={300}
+                                        height={200}
                                         className="w-full sm:w-[150%]"
                                     />
                                 </div>
@@ -105,19 +114,19 @@ export function Features() {
                                         <div className="relative flex w-[calc(50%+0.875rem)] items-center justify-end gap-2">
                                             <span className="block h-fit rounded border px-2 py-1 text-xs shadow-sm">Likeur</span>
                                             <div className="ring-background size-7 ring-4">
-                                                <img className="size-full rounded-full" src="https://avatars.githubusercontent.com/u/102558960?v=4" alt="" />
+                                                <Image className="size-full rounded-full" src="https://avatars.githubusercontent.com/u/102558960?v=4" alt="" width={32} height={32} />
                                             </div>
                                         </div>
                                         <div className="relative ml-[calc(50%-1rem)] flex items-center gap-2">
                                             <div className="ring-background size-8 ring-4">
-                                                <img className="size-full rounded-full" src="https://avatars.githubusercontent.com/u/47919550?v=4" alt="" />
+                                                <Image className="size-full rounded-full" src="https://avatars.githubusercontent.com/u/47919550?v=4" alt="" width={32} height={32} />
                                             </div>
                                             <span className="block h-fit rounded border px-2 py-1 text-xs shadow-sm">M. Irung</span>
                                         </div>
                                         <div className="relative flex w-[calc(50%+0.875rem)] items-center justify-end gap-2">
                                             <span className="block h-fit rounded border px-2 py-1 text-xs shadow-sm">B. Ng</span>
                                             <div className="ring-background size-7 ring-4">
-                                                <img className="size-full rounded-full" src="https://avatars.githubusercontent.com/u/31113941?v=4" alt="" />
+                                                <Image className="size-full rounded-full" src="https://avatars.githubusercontent.com/u/31113941?v=4" alt="" width={32} height={32} />
                                             </div>
                                         </div>
                                     </div>

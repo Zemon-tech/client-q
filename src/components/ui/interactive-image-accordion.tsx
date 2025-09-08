@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 // --- Data for the image accordion (Who we coach) ---
 const accordionItems = [
@@ -55,10 +56,11 @@ const AccordionItem = ({ item, isActive, onMouseEnter }: AccordionItemProps) => 
       onMouseEnter={onMouseEnter}
     >
       {/* Background Image */}
-      <img
+      <Image
         src={item.imageUrl}
         alt={item.title}
-        className="absolute inset-0 w-full h-full object-cover"
+        fill
+        className="absolute inset-0 object-cover"
         onError={(e) => {
           const img = e.currentTarget as HTMLImageElement
           img.onerror = null
